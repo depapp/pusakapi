@@ -1,0 +1,29 @@
+{
+  "name": "pusakapi",
+  "version": "1.0.0",
+  "description": "pusakapi is an automation testing tool based on mocha & chai",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha ./test/api/specs --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/depapp"
+  },
+  "keywords": [
+    "api",
+    "automation",
+    "mocha",
+    "chai",
+    "mochawesome"
+  ],
+  "author": "@depapp",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "mocha": "^8.3.0",
+    "mochawesome": "^6.2.2",
+    "supertest": "^6.1.3"
+  }
+}
