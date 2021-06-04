@@ -1,4 +1,4 @@
-name: pusakatest-ci
+name: pusakapi-ci
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  api-test:
 
     runs-on: ubuntu-latest
 
