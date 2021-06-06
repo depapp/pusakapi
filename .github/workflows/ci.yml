@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ main ]
 
+env:
+  OMDB_BASE_URL: ${{secrets.OMDB_BASE_URL}}
+  OMDB_API_KEY: ${{secrets.OMDB_API_KEY}}
+
 jobs:
   api-test:
 
