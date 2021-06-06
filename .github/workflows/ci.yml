@@ -6,10 +6,6 @@ on:
   pull_request:
     branches: [ main ]
 
-env:
-  OMDB_BASE_URL: ${{secrets.OMDB_BASE_URL}}
-  OMDB_API_KEY: ${{secrets.OMDB_API_KEY}}
-
 jobs:
   api-test:
 
@@ -23,6 +19,11 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v2
+
+    - uses: secrethub/actions/env-export@v0.1.0
+      env:
+        OMDB_BASE_URL: ${{secrets.OMDB_BASE_URL}}
+        OMDB_API_KEY: ${{secrets.OMDB_API_KEY}}
 
     - name: use node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
