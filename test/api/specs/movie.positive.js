@@ -22,12 +22,12 @@ const resp = {
     positive: {
         success: 200,
         response: 'True',
-        movieTitle: 'Marlina the Murderer in Four Acts',
+        movieTitle: 'Marlina si pembunuh dalam empat babak',
         movieYear: '2017',
         movieImdbId: 'tt5923026',
         movieType: 'movie',
-        seriesTitle: 'Money Heist',
-        seriesYear: '2017–',
+        seriesTitle: 'La casa de papel',
+        seriesYear: '2017–2021',
         seriesImdbId: 'tt6468322',
         seriesType: 'series'
     },
