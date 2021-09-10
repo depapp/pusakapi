@@ -22,8 +22,8 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "dotenv": "^10.0.0",
-    "mocha": "^9.0.2",
+    "mocha": "^9.1.1",
     "mochawesome": "^6.2.2",
-    "supertest": "^6.1.3"
+    "supertest": "^6.1.6"
   }
 }
