@@ -6,7 +6,7 @@ const param = {
         movieId: 'tt5923026',
         seriesId: 'tt6468322',
         movieKeyword: 'marlina',
-        seriesKeyword: 'money heist',
+        seriesKeyword: 'la casa de papel',
         movieType: 'movie',
         seriesType: 'series'
     },
@@ -74,7 +74,7 @@ describe(`OMDb - Positive Cases`, () => {
     it('@get Series by Search', async() => {
         const response = await page.getContentBySearch(param.positive.seriesKeyword, param.positive.seriesType)
         assert(response.status).to.equal(resp.positive.success)
-        assert(response.body.Response).to.equal(resp.negative.response)
+        assert(response.body.Response).to.equal(resp.positive.response)
         assert(response.body.Search[0]['Title']).to.equal(resp.positive.seriesTitle)
         assert(response.body.Search[0]['Year']).to.equal(resp.positive.seriesYear)
         assert(response.body.Search[0]['imdbID']).to.equal(resp.positive.seriesImdbId)
